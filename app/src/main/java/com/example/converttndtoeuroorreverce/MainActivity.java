@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
                 Double a = Double.parseDouble(amount.getText().toString().trim());
                 if(euroToTnd.isChecked()){
                     double result = a * 3.6;
-                    resulat.setText(String.format("Resulat : %.2f TND = %.2f EUR", amount));
+                    resulat.setText("Result of : " +  result );
                 } else {
                     double result = a * 1.8;
-                    resulat.setText(String.format("Resulat : %.2f TND = %.2f EURO ", amount));
+                    resulat.setText("Result of: " + result );
                 }
             }
         });
